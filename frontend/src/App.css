@@ -1,0 +1,185 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #fafafa;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 48px;
+  margin: 35px 0 10px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+/* SEARCH */
+.search-box {
+  width: 100%;
+  max-width: 650px;
+  padding: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 22px;
+  font-size: 17px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: white;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #006aff;
+  box-shadow: 0 0 8px rgba(0,106,255,0.4);
+}
+
+/* SLIDER – eBilet Premium */
+.poster-row {
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.poster-row::-webkit-scrollbar { display: none; }
+
+.poster-card {
+  min-width: 240px;
+  height: 360px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.14);
+  border: 1px solid #ddd;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s;
+}
+
+.poster-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.22);
+}
+
+.poster-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.poster-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.poster-info h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* BADGE */
+.poster-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff1654;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* MAP */
+.map-section {
+  width: 95%;
+  max-width: 1400px;
+  margin-top: 30px;
+}
+
+.map-box {
+  width: 100%;
+  height: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* LIST SECTION */
+.list-section {
+  width: 95%;
+  max-width: 1400px;
+  margin-top: 50px;
+}
+
+.list-section h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+}
+
+.list-item {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+}
+
+.list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.22);
+}
+
+.list-poster {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.countdown {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #006aff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.list-text {
+  padding: 15px;
+}
+
+.list-text h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.list-text p {
+  font-size: 14px;
+  color: #555;
+}

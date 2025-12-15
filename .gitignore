@@ -1,0 +1,95 @@
+############################
+# GLOBAL
+############################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+############################
+# ENV / SECRETS
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# NODE.JS
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+dist/
+build/
+dist-ssr/
+coverage/
+*.local
+
+############################
+# PYTHON
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+############################
+# ML / HUGGINGFACE / TORCH
+############################
+.cache/
+.cache/*
+**/.cache/
+**/torch/
+**/huggingface/
+
+############################
+# FASTAPI / UVICORN
+############################
+*.pid
+uvicorn.log
+
+############################
+# DOCKER
+############################
+docker-data/
+docker-volumes/
+**/data/
+
+############################
+# DATABASES
+############################
+*.sqlite
+*.db
+
+############################
+# IDE / EDITORS
+############################
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+############################
+# MISC
+############################
+logs/
+*.log
